@@ -1,0 +1,121 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    padding: 0 10px 0 10px;
+    min-width: 433px;
+}
+
+header nav{
+    border-radius: 0 0 7px 7px;
+}
+
+label{
+    opacity: 0.75;
+    color: white;
+    font-size: 1.2rem;
+}
+
+[class*="item"]:hover label{
+    opacity: 1;
+    color: white;
+    z-index: -1;
+}
+
+label{
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+#Home:checked ~ header nav div ul li #label-home{
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+#Skill:checked ~ header nav div ul li #label-skills{
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+#Project:checked ~ header nav div ul li #label-project{
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+/* #CV:checked ~ header nav div ul li #label-CV{
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid white ;
+} */
+
+#Contact:checked ~ header nav div ul li #label-contact{
+    opacity: 1;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+.about, .edu, .lang, .skill{
+    /* border: 2px solid red; */
+    height: 32px;
+}
+
+.about span, .edu span, .lang span, .skill span{
+    /* border: 2px solid springgreen; */
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.2rem;
+}
+
+.main-about{
+    background-image: linear-gradient(#1167b1, #187bcd);/* rgb(88, 159, 252); */
+    border-radius: 7px;
+}
+
+span h4{
+    display: inline-block;
+    background-color: #2a9df4/* rgb(88, 159, 252) */;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    padding-top: 6px;
+}
+
+.main-edu{
+    background-color: #187bcd;
+    /* background-image: linear-gradient(#1167b1, #187bcd); *//* rgb(88, 159, 252); */
+    border-radius: 7px;
+}
+
+.main-skill{
+    background-color: #187bcd;
+    /* background-image: linear-gradient(#1167b1, #187bcd); *//* rgb(88, 159, 252); */
+    border-radius: 7px;
+}
+
+.skill-set{
+    margin-top: -265px;
+}
+
+ @media (max-width:1400px) {
+    .skill-set{
+        margin-top: -396px;
+    }
+}
+
+@media (max-width:1200px) {
+    .skill-set{
+        margin-top: -528px;
+    }
+}
+
+@media (max-width:992px) {
+    .skill-set{
+        margin-top: 0;
+    }
+}
